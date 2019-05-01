@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>API | Current Weather API </title>
-    <link rel="stylesheet" href="./fontawesome-free-5.8.1-web/css/all.min.css">
+<!--    <link rel="stylesheet" href="./fontawesome-free-5.8.1-web/css/all.min.css">-->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 <nav class="top-nav">
@@ -25,20 +26,21 @@
         <div id="search-btn"><span><i class="fa fa-search"></i></span></div>
 </div>
 
-<h1>Weather Report</h1>
-
 <!--content container-->
     <ul class="flex-container">
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
-        <li class="flex-item"></li>
+        <li id="name"></li>
+        <li id="sys"></li>
+        <li id="main_temp"></li>
+        <li id="pressure"></li>
+        <li id="humidity"></li>
+        <li id="desc"></li>
     </ul>
 
+
+<!--footer-->
 <footer>
     <div class="footer-txt">
-        <p>&copy; 2019 All Rights Reserved</p>
-        <p>Made with &hearts; By KingTech</p>
+        <p>&copy; 2019 All Rights Reserved <br>Made with &hearts; By KingTech</p>
     </div>
 </footer>
 <script src="index.js"></script>
