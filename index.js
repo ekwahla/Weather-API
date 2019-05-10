@@ -25,7 +25,7 @@ const fd = () => {
                 console.log(data);
                 name.innerHTML = 'City: ' + data.name;
                 sys.innerHTML = 'Country Code: ' + data.sys.country;
-                main_temp.innerHTML = 'Temperature: ' + data.main.temp_min + ' K';
+                main_temp.innerHTML = 'Temperature: ' + data.main.temp_min - 273.15;
                 pressure.innerHTML = 'Pressure: ' + data.main.pressure;
                 humidity.innerHTML = 'Humidity: ' + data.main.humidity;
                 desc.innerHTML = 'Weather Desc: ' + data.weather[0].description;
