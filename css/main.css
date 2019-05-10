@@ -80,10 +80,11 @@ h2, h5 {
   font-family: "Source Code Pro Semibold", "Abril Fatface", "Open Sans", Ubuntu, monospace;
 }
 .flex-container li {
-  background: #fff;
+  background: darkslateblue;
   text-align: center;
   min-height: 100%;
   outline: 0;
+  color: #fff;
 }
 
 .footer-txt {

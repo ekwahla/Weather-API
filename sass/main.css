@@ -1,7 +1,3 @@
-html {
-  height: 100%;
-}
-
 body {
   font: 100% Helvetica, sans-serif;
   background: url("../img/sky.jpg") center no-repeat;
@@ -80,10 +76,11 @@ h2, h5 {
   font-family: "Source Code Pro Semibold", "Abril Fatface", "Open Sans", Ubuntu, monospace;
 }
 .flex-container li {
-  background: #fff;
+  background: darkslateblue;
   text-align: center;
   min-height: 100%;
   outline: 0;
+  color: #fff;
 }
 
 .footer-txt {
@@ -98,6 +95,12 @@ h2, h5 {
   position: absolute;
   height: -50px;
   font-weight: bold;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  background-color: #897;
 }
 
 /*# sourceMappingURL=main.css.map */
