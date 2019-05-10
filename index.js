@@ -13,7 +13,7 @@ let error = document.getElementsByTagName('ul');
 const fd = () => {
     const input = document.querySelector('#search').value;
     // Openweathermap  url
-    url = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&APPID=58930770b946214d2479d8960c8ff302";
+    url = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&units=metric" + "&APPID=58930770b946214d2479d8960c8ff302";
     document.getElementById("loading").style.display = "block";
     document.getElementById("main").style.display = "none";
     fetch(url)
@@ -25,7 +25,7 @@ const fd = () => {
                 console.log(data);
                 name.innerHTML = 'City: ' + data.name;
                 sys.innerHTML = 'Country Code: ' + data.sys.country;
-                main_temp.innerHTML = 'Temperature: ' + data.main.temp_min - 273.15;
+                main_temp.innerHTML = 'Temperature: ' + data.main.temp_min;
                 pressure.innerHTML = 'Pressure: ' + data.main.pressure;
                 humidity.innerHTML = 'Humidity: ' + data.main.humidity;
                 desc.innerHTML = 'Weather Desc: ' + data.weather[0].description;
